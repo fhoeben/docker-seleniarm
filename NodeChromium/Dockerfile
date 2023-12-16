@@ -50,6 +50,6 @@ USER ${SEL_UID}
 #============================================
 # Dumping Browser information for config
 #============================================
-RUN echo "chromium" > /opt/selenium/browser_name
+RUN echo "chrome" > /opt/selenium/browser_name
 RUN chromium --version | awk '{print $2}' > /opt/selenium/browser_version
 RUN echo "\"goog:chromeOptions\": {\"binary\": \"/usr/bin/chromium\"}" > /opt/selenium/browser_binary_location
