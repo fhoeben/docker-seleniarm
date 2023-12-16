@@ -919,7 +919,7 @@ chromiumNode:
   # scaledObjectOptions:
   hpa:
     url: '{{ include "seleniumGrid.graphqlURL" . }}'
-    browserName: chromium
+    browserName: chrome
     # browserVersion: '91.0' # Optional. Only required when supporting multiple versions of browser in your Selenium Grid.
     unsafeSsl: 'true'  # Optional
 
