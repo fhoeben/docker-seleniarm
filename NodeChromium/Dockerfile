@@ -35,7 +35,7 @@ RUN mkdir /home/seluser/.gnupg && mkdir -p ${DEBIAN_KEY_LOCATION} \
   && echo "deb [signed-by=${DEBIAN_KEY_LOCATION}/security-${DEBIAN_VERSION}.gpg] http://deb.debian.org/debian-security ${DEBIAN_VERSION}-security main contrib non-free" \
           >> ${REPO_FILE} \
   && apt-get update -qqy \
-  && apt-get -qqy install chromium=${CHROMIUM_VERSION} chromium-driver=${CHROMEDIVER_VERSION} \
+  && apt-get -qqy --no-install-recommends install chromium=${CHROMIUM_VERSION} chromium-driver=${CHROMEDIVER_VERSION} \
   && rm ${REPO_FILE} \
   && rm -rf ${DEBIAN_KEY_LOCATION}/ /var/lib/apt/lists/* /var/cache/apt/*
 
