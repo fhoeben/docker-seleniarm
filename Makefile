@@ -346,7 +346,7 @@ test: test_chrome \
  test_chrome_standalone \
  test_firefox_standalone \
  test_edge \
- test_edge_standalone
+ test_edge_standalone \
  test_chromium \
  test_chromium_standalone
 
